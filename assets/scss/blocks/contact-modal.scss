@@ -5,11 +5,24 @@
 
   &__close {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    right: 0;
+    top: 0;
+    
+    
+    
   }
 
   &__title {
     margin-bottom: 50px;
+    @media (max-width: 600px) {
+      margin-bottom: 10px;
+    }
+    @media (max-width: 400px) {
+      width: 70%;
+    }
+     
+  }
+  @media (max-width: 600px) {
+    padding: 10px;
   }
 }

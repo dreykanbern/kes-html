@@ -6,6 +6,7 @@
   justify-content: center;
   width: 100%;
   height: 100%;
+  
   top: 0;
   left: 0;
 
@@ -26,6 +27,7 @@
     display: flex;
     align-items: center;
     height: 100%;
+    max-width: 651px;
 
     &_video {
       max-height: calc(var(--container-width) * 0.5625 + 40px);
@@ -43,7 +45,7 @@
       background: $white;
 
       @media (max-width: 768px) {
-        width: 100%;
+        width: 90%;
       }
 
     }
@@ -66,5 +68,54 @@
 
   &_show {
     display: flex;
+  }
+  &__h5 {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+  &__input {
+    margin: 8px 0 30px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #CFD4DC;
+    border-radius: 8px;
+  }
+  &__input_last {
+    margin: 8px 0 0;
+    width: 100%;
+    height: 150px;
+  }
+  &__btn {
+    background: #E85323;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    color:#fff;
+    margin: 82px auto 50px;
+    width: 169px;
+    height: 41px;
+    @media (max-width: 600px) {
+      margin: 42px auto 10px;
+    }
+  }
+  &__container {
+    position: relative;
+    @media (max-width: 768px) {
+      padding: 0;
+    }
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    & span {
+      color: #E85323;
+    }
   }
 }

@@ -1,7 +1,9 @@
 .close {
   height: 24px;
   width: 24px;
-  &:after {
+  color: #E85323;
+  cursor: pointer;
+  /* &:after {
     content: url(../img/icon/cross.svg);
-  }
+  } */
 }
