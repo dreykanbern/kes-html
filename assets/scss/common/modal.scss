@@ -6,9 +6,9 @@
   justify-content: center;
   width: 100%;
   height: 100%;
-  
   top: 0;
   left: 0;
+  overflow-y: hidden;
 
   &__overlay {
     position: absolute;
@@ -26,8 +26,10 @@
   &__elem {
     display: flex;
     align-items: center;
-    height: 100%;
     max-width: 651px;
+    box-sizing:content-box;
+    overflow-y: auto;
+    
 
     &_video {
       max-height: calc(var(--container-width) * 0.5625 + 40px);
@@ -45,15 +47,18 @@
       margin-top: 5%;
       border-radius: 8px;
       background: $white;
+       
 
       @media (max-width: 768px) {
         width: 90%;
       }
+       
 
     }
   }
   &__container {
     position: relative;
+    box-sizing: content-box;
     @media (max-width: 768px) {
       padding: 0;
     }
