@@ -1,0 +1,30 @@
+.history-graph {
+  &__legend {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__legend-item {
+    position: relative;
+    margin: 0 30px 20px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      border: 6px solid #4bc0c0;
+      left: -20px;
+      top: 50%;
+      margin-top: -6px;
+
+    }
+
+    &:last-child {
+      &:before {
+        border-color: #ffcd56;
+      }
+    }
+  }
+}

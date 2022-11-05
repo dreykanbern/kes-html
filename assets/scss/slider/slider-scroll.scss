@@ -1,0 +1,44 @@
+.slider-scroll {
+  position: relative;
+  &__arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-bottom: 19px;
+    z-index: 1;
+    opacity: 0.5;
+    cursor: pointer;
+    margin-top: -19px;
+
+    &_prev {
+      left: 13.5px;
+    }
+
+    &_next {
+      right: 13.5px;
+    }
+  }
+
+  &__arrow-icon {
+    fill: $white;
+    &_next {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .slider-scroll {
+    &__arrow {
+      display: none;
+    }
+
+    &__scroll {
+      display: none;
+    }
+
+    &__dots {
+      display: block;
+    }
+  }
+}

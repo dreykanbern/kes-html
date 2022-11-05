@@ -1,0 +1,7 @@
+.content {
+  &__item {
+    &:not(.content__item_show) {
+      display: none;
+    }
+  }
+}

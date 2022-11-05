@@ -1,0 +1,41 @@
+.pagination_js {
+  ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+
+  .paginationjs {
+    width: 100%;
+  }
+
+  .paginationjs-page, .paginationjs-ellipsis {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-left: 1px solid $lines-grey;
+    font-weight: 650;
+    cursor: pointer;
+
+    &:last-child {
+      border-right: 1px solid $lines-grey;
+    }
+
+    &.active {
+      background: $primary;
+      color: $white;
+    }
+  }
+
+  .paginationjs-prev, .paginationjs-next {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+  }
+  .paginationjs-next {
+    justify-content: flex-end;
+  }
+
+}

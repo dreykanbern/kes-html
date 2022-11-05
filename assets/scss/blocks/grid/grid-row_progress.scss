@@ -1,0 +1,65 @@
+.grid-row {
+  &_progress {
+    position: relative;
+    padding-left: 50px;
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      height: calc(100% + 80px);
+      width: 1px;
+      background: $secondary;
+      top: 5px;
+      left: 11px;
+    }
+
+    &:last-child {
+      &:before {
+        display: none;
+      }
+    }
+  }
+
+  &__summary_progress {
+    &_filled, &_empty {
+      position: relative;
+      &:before {
+        display: block;
+        content: '';
+        position: absolute;
+        left: -50px;
+        top: 4px;
+        width: 23px;
+        height: 23px;
+        border: 1px solid $secondary;
+        background: $white;
+        border-radius: 100%;
+      }
+    }
+
+    &_filled {
+      &:after {
+        display: block;
+        content: '';
+        position: absolute;
+        top: 10px;
+        left: -44px;
+        width: 11px;
+        height: 11px;
+        background: $secondary;
+        border-radius: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-row {
+    &_progress {
+      gap: 20px;
+      &:before {
+        height: calc(100% + 50px);
+      }
+    }
+  }
+}

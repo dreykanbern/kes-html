@@ -1,0 +1,46 @@
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-stretch: 115%;
+  font-size: 15px;
+
+  &__item {
+    white-space: nowrap;
+  }
+
+  &__link {
+    color: rgba($primary, 0.5);
+    text-decoration: none;
+
+    &:after {
+      content: '–';
+      color: $primary;
+      margin: 0 5px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .breadcrumbs {
+    display: inline;
+    &__item {
+      display: inline;
+      white-space: initial;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .breadcrumbs {
+    font-size: 14px;
+  }
+}
+
+@media print {
+  .breadcrumbs {
+    display: none;
+  }
+}

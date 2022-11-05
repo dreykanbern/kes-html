@@ -1,0 +1,25 @@
+.partners {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__partner {
+    width: 25%;
+  }
+}
+
+@media (max-width: 992px) {
+  .partners {
+    &__partner {
+      width: 33.3%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .partners {
+    padding-top: 15px;
+    &__partner {
+      width: 50%;
+    }
+  }
+}

@@ -1,0 +1,121 @@
+.layout {
+  &__breadcrumbs {
+    margin-top: 40px;
+  }
+
+  &__banner {
+    margin-top: 40px;
+  }
+
+  &__pagination {
+    margin-top: 40px;
+  }
+
+  &__title {
+    margin-top: 30px;
+  }
+
+  &__news {
+    margin-top: 30px;
+  }
+
+  &__news-btn {
+    margin: 40px auto 0;
+  }
+
+  &__section {
+    margin-top: 60px;
+  }
+
+  &__tabs {
+    margin-top: 20px;
+  }
+
+  &__catalog {
+    margin-top: 30px;
+  }
+
+  &__projects {
+    margin-top: 30px;
+  }
+
+  &__article {
+    margin-top: 30px;
+    &_has-banner {
+      margin-top: 0;
+    }
+  }
+
+  &__images {
+    margin-top: 30px;
+  }
+
+  &__img-block {
+    margin-top: 20px;
+    border-radius: 14px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__window {
+    margin-top: 20px;
+  }
+
+  &__accordion {
+    margin-top: 20px;
+  }
+
+  &__cards {
+    margin-top: 50px;
+  }
+
+  &__slider-scroll {
+    margin-top: 60px;
+  }
+
+  &__mobile-btn {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  .layout {
+    &__slider-banners {
+      margin-top: 40px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .layout {
+    &__title {
+      margin-top: 20px;
+    }
+
+    &__news {
+      margin-top: 20px;
+    }
+
+    &__news-btn {
+      margin-top: 30px;
+    }
+
+    &__banner {
+      margin-top: 30px;
+    }
+
+    &__catalog {
+      margin-top: 20px;
+    }
+
+    &__cards {
+      margin-top: 40px;
+    }
+
+    &__section {
+      margin-top: 40px;
+    }
+  }
+}

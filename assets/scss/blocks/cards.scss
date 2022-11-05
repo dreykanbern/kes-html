@@ -1,0 +1,11 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+@media (max-width: 768px) {
+  .cards {
+    row-gap: 15px;
+  }
+}

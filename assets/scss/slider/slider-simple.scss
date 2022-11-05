@@ -1,0 +1,40 @@
+.slider-simple {
+  display: flex;
+  align-items: center;
+  margin: 0 -55px;
+
+  &__wrapper {
+    align-items: center;
+  }
+
+  &__arrow {
+    position: static;
+    margin: 0 55px;
+    &:after {
+      font-size: 0;
+    }
+
+    &_next {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__arrow-icon {
+    width: 18px;
+    height: 18px;
+    stroke: $lines-grey;
+  }
+
+  &__img {
+    margin: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .slider-simple {
+    margin: 0 -33px;
+    &__arrow {
+      margin: 0 33px;
+    }
+  }
+}

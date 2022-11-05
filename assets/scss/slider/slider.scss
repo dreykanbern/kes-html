@@ -1,0 +1,52 @@
+.slider {
+  $self: &;
+  &__dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 4px;
+    border-radius: 100%;
+    border: 1.5px solid $white;
+
+    &_active {
+      background: $white;
+    }
+  }
+
+  &__dots {
+    display: none;
+    margin: 20px -4px 0;
+    text-align: center;
+    line-height: 10px;
+
+    &_dark {
+      #{$self}__dot {
+        border-color: $primary;
+
+        &_active {
+          background: $primary;
+        }
+      }
+    }
+  }
+
+  &__scroll {
+    height: 8px;
+    background: $lines-grey;
+    border-radius: 5px;
+    margin-top: 30px;
+
+    &_draggable {
+      #{$self}__scroll-drag {
+        cursor: move;
+      }
+    }
+  }
+
+  &__scroll-drag {
+    height: 100%;
+    background: $primary;
+    border-radius: 5px;
+    transform-origin: left top;
+  }
+}

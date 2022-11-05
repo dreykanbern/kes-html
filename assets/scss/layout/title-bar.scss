@@ -1,0 +1,26 @@
+.title-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+  &__main {
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    margin-right: 48px;
+  }
+}
+
+@media (max-width: 576px) {
+  .title-bar {
+    flex-direction: column;
+    gap: 20px;
+
+    &__main {
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+}

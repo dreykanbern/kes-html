@@ -1,0 +1,64 @@
+.window {
+  display: flex;
+  border-radius: 14px;
+  overflow: hidden;
+  background: $white;
+
+  &__control {
+    width: 46%;
+    flex-shrink: 0;
+    margin-right: 40px;
+  }
+
+  &__tab {
+    position: relative;
+    display: block;
+    padding: 25px 32px 25px 20px;
+    color: rgba($primary, 0.2);
+    border-top: 1px solid rgba($lines-grey, 0.7);
+    border-bottom: 1px solid rgba($lines-grey, 0.7);
+    font-size: 21px;
+    line-height: 1.3;
+
+    &:hover {
+      background: $lines-grey;
+      color: $primary;
+    }
+
+    &_active, &_active:hover {
+      background: $primary;
+      color: $white;
+    }
+
+    &:first-child {
+      border-top: 0;
+    }
+
+    &:last-child {
+      border-bottom: 0;
+    }
+
+    &:after {
+      content: url("../img/icon/angle-left.svg");
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%) rotate(180deg);
+    }
+  }
+
+  &__content {
+    position: relative;
+    height: 385px;
+    overflow-y: auto;
+    flex-grow: 1;
+  }
+
+  &__scroll {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+}

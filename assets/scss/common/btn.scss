@@ -1,0 +1,56 @@
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: $primary;
+  font-weight: 650;
+  padding: 18px 50px;
+  border-radius: 10px;
+  color: $white;
+  text-align: center;
+  line-height: 1.4;
+  cursor: pointer;
+
+  &:hover {
+    background: $secondary;
+    color: $white;
+  }
+
+  &_color {
+    &_gray {
+      background: $light-grey;
+      color: $primary;
+    }
+
+    &_secondary {
+      background: $secondary;
+      border: 1px solid $secondary;
+      color: $white;
+
+      &:hover {
+        background: transparent;
+        color: $secondary;
+      }
+    }
+  }
+
+  &_width {
+    &_full {
+      width: 100%;
+    }
+  }
+
+  &__text-icon {
+    margin-left: 10px;
+  }
+
+  &_insertion_bottom {
+    border-radius: 0 0 14px 14px;
+  }
+
+  &_size {
+    &_s {
+      padding: 10px 50px;
+    }
+  }
+}

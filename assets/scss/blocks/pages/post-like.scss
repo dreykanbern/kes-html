@@ -1,0 +1,14 @@
+.post-like {
+  cursor: pointer;
+  $self: &;
+  &__icon {
+    fill: transparent;
+    stroke: $secondary;
+  }
+
+  &_set {
+    #{$self}__icon {
+      fill: $secondary;
+    }
+  }
+}

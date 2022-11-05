@@ -1,0 +1,13 @@
+.meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 15px;
+  font-stretch: 115%;
+}
+
+@media (max-width: 768px) {
+  .meta {
+    font-size: 14px;
+  }
+}

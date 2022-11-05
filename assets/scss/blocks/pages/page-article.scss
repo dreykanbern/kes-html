@@ -1,0 +1,8 @@
+@media (max-width: 576px) {
+  .page-article {
+    &__mobile-background {
+      background: $white;
+      padding-bottom: 30px;
+    }
+  }
+}

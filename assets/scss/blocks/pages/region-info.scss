@@ -1,0 +1,45 @@
+.region-info {
+  display: flex;
+  align-items: flex-start;
+
+  &__img {
+    flex-shrink: 0;
+    margin-right: 30px;
+    width: 100px;
+  }
+
+  &__items {
+    display: flex;
+    margin-top: 12px;
+  }
+
+  &__item {
+    margin-right: 43px;
+  }
+
+  &__item-title {
+    color: rgba($white, 0.5);
+    font-size: 12px;
+    margin-bottom: 2px;
+  }
+
+  &__text {
+    font-weight: 650;
+  }
+}
+
+@media (max-width: 768px) {
+  .region-info {
+    flex-direction: column;
+    margin-top: -50px;
+    color: $primary;
+
+    &__content {
+      margin-top: 15px;
+    }
+
+    &__item-title {
+      color: rgba($primary, 0.5);
+    }
+  }
+}

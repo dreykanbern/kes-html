@@ -1,0 +1,21 @@
+.fade-card-substrate {
+  flex-direction: column;
+  padding: 50px 25px;
+
+  &__title {
+    font-weight: 650;
+    font-size: 26px;
+    line-height: 1.3;
+  }
+
+  &__content {
+    margin-top: 20px;
+    flex-grow: 1;
+    font-size: 21px;
+    font-weight: 500;
+  }
+
+  &__separator {
+    margin: 20px 0;
+  }
+}

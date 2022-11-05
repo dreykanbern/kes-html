@@ -1,0 +1,129 @@
+.select {
+  appearance: none;
+  font-size: 21px;
+  font-family: inherit;
+  font-variation-settings: inherit;
+  font-stretch: inherit;
+
+  &:not(&_bare) {
+    .ts-control {
+      height: 100%;
+      width: 260px;
+    }
+  }
+
+
+  &_bare {
+    background-color: transparent;
+    background-image: url('../img/icon/angle-down.svg');
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    padding: 0 23px 0 0;
+
+    border: 0;
+  }
+
+  &_field {
+    width: 250px;
+  }
+}
+
+.select2-dropdown {
+  background: #FFFFFF;
+  border: 1px solid #CFD4DC;
+  box-shadow: 0px 0px 15px rgba(125, 141, 182, 0.25);
+  border-radius: 10px !important;
+  overflow: hidden;
+  margin-top: 42px;
+  font-size: 16px;
+}
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+  background: #CFD4DC;
+  color: $primary;
+}
+
+.select2-results {
+  font-weight: 650;
+}
+
+.select2-results__option {
+  padding: 15px 20px;
+}
+
+.select2-container .select2-selection--single {
+  height: 50px;
+}
+
+.select2-container .select2-selection--single, .select2-container .select2-selection--single .select2-selection__rendered {
+  line-height: 50px;
+  font-weight: 650;
+  height: 50px;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+  padding: 0 20px;
+
+}
+
+.select2-container--default .select2-selection--single {
+  border: 1px solid #CFD4DC;
+  border-radius: 8px !important;
+  position: relative;
+}
+
+.select2-selection__arrow b {
+  display: none;
+}
+
+.select2-selection--single {
+  &:after {
+    display: block;
+    content: '';
+    background: url("../img/icon/angle-down.svg") center center no-repeat;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+  }
+}
+
+.select2-container--open {
+  .select2-selection--single:after {
+    transform: rotate(180deg) translateY(50%);
+  }
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  position: static;
+}
+
+.select_bare + {
+  .select2.select2-container--default .select2-selection--single {
+    border: 0;
+    background: transparent;
+    text-align: right;
+
+    &, .select2-selection__rendered {
+      line-height: 27px;
+      height: 27px;
+    }
+
+    &:after {
+      right: 0;
+    }
+
+
+    .select2-selection__rendered {
+      padding: 0 23px 0 0;
+    }
+  }
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: $primary;
+}

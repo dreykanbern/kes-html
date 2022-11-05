@@ -1,0 +1,22 @@
+.yandex-share {
+  .ya-share2 {
+    &__list, &__item {
+      width: 100%;
+    }
+    &__link_more {
+      display: none;
+    }
+
+  }
+  &__real-button {
+    height: 0;
+  }
+  &__button {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.ya-share2__container_size_m.ya-share2__container_alone .ya-share2__popup_direction_bottom, .ya-share2__container_size_m .ya-share2__item_more.ya-share2__item_has-pretty-view .ya-share2__popup_direction_bottom {
+  top: 5px !important;
+}

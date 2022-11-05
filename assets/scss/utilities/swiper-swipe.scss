@@ -1,0 +1,17 @@
+.swiper-swipe {
+  @media (min-width: 992px) {
+    &__scroll {
+      display: none;
+    }
+  }
+
+  @media (max-width: 992px) {
+    &__elem {
+      &_table {
+        @media not print {
+          width: 1070px;
+        }
+      }
+    }
+  }
+}

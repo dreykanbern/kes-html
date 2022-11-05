@@ -1,0 +1,38 @@
+.control {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+
+  &__icon {
+    --indent: 8px;
+    margin-right: var(--indent);
+
+    &_indent_low {
+      --indent: 2px;
+    }
+
+    &_align_right {
+      margin-right: 0;
+      margin-left: var(--indent);
+    }
+
+    &_reflect {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .control {
+    font-size: 14px;
+
+    &_mobile {
+      &_only-icon {
+        font-size: 0;
+        --indent: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,125 @@
+@import "fonts";
+//@import "node_modules/normalize-scss/sass/normalize/import-now";
+@import "variables";
+@import "root";
+
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+@import "utilities/center";
+@import "common/line";
+@import "common/close";
+@import "common/container";
+@import "common/btn";
+@import "common/badge";
+@import "common/wrap";
+@import "common/breadcrumbs";
+@import "common/control";
+@import "common/banner";
+@import "common/icon";
+@import "common/table";
+@import "common/content-block";
+@import "common/modal";
+@import "common/select";
+@import "blocks/cards";
+
+@import "blocks/card/project-card";
+@import "blocks/card/card";
+@import "blocks/card/card_height";
+@import "blocks/card/card_width";
+@import "blocks/card/card-detailed";
+@import "blocks/card/fade-card";
+@import "blocks/card/fade-card-substrate";
+@import "blocks/card/drawer-card";
+@import "blocks/card/simple-card";
+
+@import "slider/slider";
+@import "slider/slider-simple";
+@import "slider/slider-grid";
+@import "slider/slider-banners";
+@import "slider/slider-scroll";
+
+@import "blocks/social";
+@import "blocks/socials";
+@import "blocks/menu";
+
+@import "blocks/meta";
+@import "blocks/rating";
+@import "blocks/news";
+@import "common/pagination";
+@import "common/pagination_js";
+@import "blocks/dropwdown-menu";
+@import "blocks/tabs";
+@import "blocks/content";
+@import "blocks/download";
+@import "blocks/accordion";
+@import "blocks/from-editor";
+@import "blocks/people";
+@import "blocks/match-widget";
+@import "blocks/scrollup";
+@import "blocks/title-line";
+@import "blocks/contact-modal";
+
+@import "blocks/grid/grid";
+@import "blocks/grid/grid-row";
+@import "blocks/grid/grid-row-summary";
+@import "blocks/grid/grid-row_progress";
+
+@import "blocks/scroll";
+@import "blocks/person";
+@import "blocks/progress";
+@import "common/section";
+
+@import "form/short-search";
+@import "form/search-full";
+@import "form/filter-bar";
+@import "form/flatpickr";
+
+@import "layout/page-wrap";
+@import "layout/header";
+@import "layout/layout";
+@import "layout/title-bar";
+@import "layout/page-content";
+@import "layout/page-sponsor";
+
+@import "blocks/pages/page-article";
+@import "blocks/pages/article";
+@import "blocks/pages/page-news";
+@import "blocks/pages/catalog";
+@import "blocks/pages/projects";
+@import "blocks/separated-list";
+@import "blocks/pages/window";
+@import "blocks/pages/long-img";
+@import "blocks/pages/textimg-block";
+@import "blocks/pages/partner";
+@import "blocks/pages/partners";
+@import "blocks/pages/region-info";
+@import "blocks/pages/button-item";
+@import "blocks/pages/yandex-share";
+@import "blocks/pages/post-like";
+@import "blocks/pages/history-stat";
+@import "blocks/pages/gallery";
+@import "blocks/pages/team-leaders";
+@import "blocks/pages/post-list";
+@import "blocks/pages/page-search";
+@import "blocks/pages/history-graph";
+@import "blocks/pages/region-hero";
+@import "blocks/pages/print-button";
+
+@import "layout/footer";
+
+@import "abstract/block";
+@import "abstract/items";
+
+@import "utilities/swipe";
+@import "utilities/swiper-swipe";
+@import "utilities/color";
+@import "utilities/text";
+@import "utilities/rotate";
+@import "utilities/clear";
+
+@import "new";

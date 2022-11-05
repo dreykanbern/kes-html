@@ -1,0 +1,39 @@
+.simple-card {
+  width: calc(25% - 30px);
+  padding: 30px 20px;
+  background: $white;
+  border-radius: 14px;
+
+  &__text {
+    font-size: 21px;
+  }
+
+  &__content {
+    margin-top: 55px;
+  }
+}
+
+@media (max-width: 992px) {
+  .simple-card {
+    width: calc(50% - 40px);
+  }
+}
+
+@media (max-width: 576px) {
+  .simple-card {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
+    padding: 18px 12px;
+
+    &__content {
+      margin-left: 17px;
+      margin-top: 0;
+    }
+
+    &__text {
+      font-size: 19px;
+    }
+  }
+}

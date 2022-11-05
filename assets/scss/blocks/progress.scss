@@ -1,0 +1,19 @@
+.progress {
+  position: static;
+  background: none;
+  border-top: 1px solid rgba($lines-grey, 0.7);
+  &__bar {
+    display: block;
+    width: 0;
+    height: 3px;
+    background: $secondary;
+    transform-origin: left top;
+    margin-top: -1px;
+
+    &_w {
+      &_25 {
+        width: 25%;
+      }
+    }
+  }
+}

@@ -1,0 +1,97 @@
+
+
+.plgtvr-text{
+    margin-top: 30px;
+    &-wrap{
+        padding: 40px;
+        background-color: #ffffff;
+        border-radius: 14px;
+    }
+    &__title{
+        margin-bottom: 15px;
+    }
+}
+@media (max-width: 991px){
+    .plgtvr-text{
+        margin-top: 30px;
+        &-wrap{
+            padding: 40px;
+            background-color: #ffffff;
+            border-radius: 14px;
+        }
+        &__title{
+            margin-bottom: 15px;
+        }
+    }
+}
+@media (max-width: 480px){
+    .plgtvr-text{
+        margin-top: 20px;
+        &-wrap{
+            padding: 20px;
+            border-radius: 10px;
+        }
+    }
+}
+
+
+
+.plgtvr-krai{
+    margin-top: 30px;
+    margin-bottom: 80px;
+    &-wrap{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    &__block{
+        border-radius: 14px;
+        width: calc((100% - 30px)/ 2);
+        overflow: hidden;
+        img{
+            display: block;
+            border-radius: 14px 14px 0 0;
+            border: 5px solid #FFFFFF;
+            height: 230px;
+            object-fit: cover;
+        }
+        &__link{
+            display: block;
+            width: 100%;
+            background-color: #151A25;
+            color: #ffffff;
+            text-decoration: none;
+            text-align: center;
+            padding: 20px;
+            border-radius: 0 0 14px 14px;
+            &:hover{
+                background-color: #E85323;
+            }
+        }
+    }
+}
+@media (max-width: 991px){
+    .plgtvr-krai{
+        margin-top: 20px;
+        margin-bottom: 60px;
+        &-wrap{
+            gap: 20px;
+        }
+        &__block{
+            border-radius: 10px;
+            width: 100%;
+            img{
+                border-radius: 10px 10px 0 0;
+                height: auto;
+            }
+            &__link{
+                background-color: #151A25;
+                padding: 16px;
+                border-radius: 0 0 10px 10px;
+                &:hover{
+                    background-color: #151A25;
+                }
+            }
+        }
+    }
+}

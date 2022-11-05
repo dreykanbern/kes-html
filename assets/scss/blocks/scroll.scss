@@ -1,0 +1,14 @@
+.scroll {
+  overflow-y: auto;
+
+  &_people {
+    height: 440px;
+  }
+}
+
+@media (max-width: 768px) {
+  .scroll_people {
+    height: auto;
+    overflow-y: initial;
+  }
+}

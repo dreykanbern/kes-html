@@ -1,0 +1,23 @@
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  &_round {
+    border-radius: 100%;
+    border: 2px solid $primary;
+  }
+
+  &_border {
+    &_white {
+      border-color: $white;
+    }
+  }
+
+  &_fill {
+    &_white {
+      fill: $white;
+    }
+  }
+}

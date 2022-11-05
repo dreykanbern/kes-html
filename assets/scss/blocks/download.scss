@@ -1,0 +1,28 @@
+.download {
+  &:after {
+    visibility: hidden;
+    position: absolute;
+    content: url(../img/icon/download.svg);
+    top: 50%;
+    transform: translateY(-50%);
+    right: 41px;
+  }
+
+  &:hover {
+    color: $secondary;
+
+    &:after {
+      visibility: visible;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .download {
+    &:after {
+      visibility: visible;
+      filter: grayscale(1);
+      right: 6px;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+.people {
+  $self: &;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 40px;
+
+  &_separator_lines {
+    gap: 60px;
+    #{$self}__person {
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -30px;
+        height: 1px;
+        background: $lines-grey;
+      }
+    }
+  }
+
+  &__person {
+    position: relative;
+
+
+
+    &_width {
+      &_half {
+        width: calc(50% - 25px);
+
+        @media (min-width: 992px) {
+          &:nth-child(2n + 1) {
+            &:after {
+              right: -25px;
+            }
+          }
+
+          &:nth-child(2n) {
+            &:after {
+              left: -25px;
+            }
+          }
+        }
+
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .people {
+    &__person {
+      width: 100%;
+    }
+  }
+}

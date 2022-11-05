@@ -1,0 +1,100 @@
+
+
+.teams{
+    margin-top: 20px;
+    margin-bottom: 80px;
+    &-wrap{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: calc((100% - (290px * 3)) / 2);
+        row-gap: 30px;
+        background: #FFFFFF;
+        border-radius: 14px;
+        padding: 30px 40px;
+    }
+    &__block{
+        width: 290px;
+        &__link{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+            color: #151A25;
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba(#CFD4DC, 0.5);
+            &:nth-last-of-type(1){
+                padding-bottom: 0;
+                border-bottom: none;
+            }
+            &__content{
+                .title{
+                    display: block;
+                    color: #151A25;
+                    &:hover{
+                        color: #E85323;
+                    }
+                }
+                .text{
+                    margin-top: 2px;
+                    opacity: 0.5;
+                }
+            }
+            &__img{
+                width: 48px;
+                margin-left: 10px;
+                border-radius: 100%;
+                flex-shrink: 0;
+                img{
+                    border-radius: 100%;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1260px){
+    .teams{
+        &-wrap{
+            justify-content: space-between;
+            column-gap: 60px;
+        }
+        &__block{
+            width: calc((100% - 60px) / 2);
+        }
+    }
+}
+@media (max-width: 991px){
+    .teams{
+        &-wrap{
+            justify-content: space-between;
+            column-gap: 40px;
+        }
+        &__block{
+            width: calc((100% - 40px) / 2);
+        }
+    }
+}
+@media (max-width: 480px){
+    .teams{
+        margin-top: 20px;
+        margin-bottom: 60px;
+        background-color: #FFFFFF;
+        &-wrap{
+            column-gap: 0px;
+            row-gap: 40px;
+            border-radius: 0x;
+            padding: 30px 0px;
+        }
+        &__block{
+            width: 100%;
+            &__link{
+                &__content{
+                    .title{
+                        &:hover{
+                            color: #151A25;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

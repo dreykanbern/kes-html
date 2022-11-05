@@ -1,0 +1,28 @@
+.grid {
+  $self: &;
+  &__separator {
+    margin: 40px 0;
+    + #{$self}__row {
+      margin-top: 0;
+    }
+  }
+
+  &__row {
+    margin-top: 80px;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    &__separator {
+      margin: 30px 0;
+    }
+
+    &__row {
+      margin-top: 40px;
+    }
+  }
+}

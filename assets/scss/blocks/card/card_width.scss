@@ -1,0 +1,18 @@
+.card {
+  $self: &;
+  &_width {
+    @media (min-width: 768px) {
+      &_wide {
+        width: calc((100% - 40px) / 2);
+
+        #{$self}__title {
+          margin-bottom: 52px;
+        }
+
+        &:after {
+          height: 270px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.card {
+  $self: &;
+
+  &_height {
+    &_tall {
+      height: 410px;
+
+      &:after {
+        height: 230px;
+      }
+
+      #{$self} {
+        &__title {
+          margin-bottom: 45px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    $self: &;
+
+    &_height_tall {
+      #{$self} {
+        &__title {
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+}

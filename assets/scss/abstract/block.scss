@@ -1,0 +1,47 @@
+.block {
+  &_hidden {
+    display: none;
+  }
+
+  &_w {
+    &_half {
+      @media (min-width: 992px) {
+        width: 50%;
+      }
+    }
+  }
+
+  &_resolution {
+    @media (min-width: 768px) {
+      &_mobile {
+        display: none;
+      }
+    }
+
+    @media (max-width: 768px) {
+      &_not-mobile {
+        display: none;
+      }
+    }
+
+    @media (min-width: 576px) {
+      &_sm {
+        display: none;
+      }
+    }
+
+    @media (max-width: 576px) {
+      &_not-sm {
+        display: none;
+      }
+    }
+  }
+
+  &_on-print {
+    &_hidden {
+      @media print {
+        display: none;
+      }
+    }
+  }
+}

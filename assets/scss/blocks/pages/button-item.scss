@@ -1,0 +1,14 @@
+.button-item {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+@media (max-width: 768px) {
+  .button-item {
+    display: block;
+    &__btn {
+      margin-top: 15px;
+    }
+  }
+}

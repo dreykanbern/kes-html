@@ -1,0 +1,75 @@
+/* корректировки */
+/* шапка */
+.short-search input:focus-visible {
+  outline: 0px;
+}
+.header_mobile .header__full_show .header__footer{
+padding-bottom: 30px;
+}
+
+/* главная */
+.banner__text{
+  max-width: 757px;
+  }
+.new-calendar{
+  margin-top: 60px;
+  .layout__slider-scroll {
+    margin-top: 20px;
+  }
+}
+.new-birthday {
+  .scroll{
+    margin-right: 6px;
+    padding-right: 6px;
+    margin-bottom: 10px;
+    &::-webkit-scrollbar {
+      width: 8px;
+    }
+    &::-webkit-scrollbar-track {
+      background: #ffffff;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: #CFD4DC;
+      border-radius: 14px;
+      border: 1px solid #CFD4DC;
+    }
+  }
+  .person__img {
+    width: 100px;
+    height: 117px;
+  }
+  .wrap__title{
+    margin-bottom: 30px;
+  }
+}
+.textimg-block__link{
+  margin-bottom: 20px;
+}
+@media (max-width:576px){
+  .new-textimg-home{
+    margin-top: 0;
+  }
+}
+
+.teams__block__link__img {
+  height: 48px;
+  border-radius: 0;
+}
+
+.teams__block__link__img img {
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 0;
+}
+
+.about-medal {
+  &__position {
+    height: 76px;
+    overflow: hidden;
+  }
+
+  &__who-gave {
+    height: 58px;
+    overflow: hidden;
+  }
+}

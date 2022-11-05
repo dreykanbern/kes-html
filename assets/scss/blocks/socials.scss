@@ -1,0 +1,15 @@
+.socials {
+  display: flex;
+  margin: 0 -6px;
+
+  &__social {
+    margin: 0 6px;
+
+    &:hover {
+      background: $primary;
+      svg {
+        fill: $white;
+      }
+    }
+  }
+}

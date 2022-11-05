@@ -1,0 +1,15 @@
+.contact-modal {
+  position: relative;
+  padding: 50px;
+  font-stretch: initial;
+
+  &__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  &__title {
+    margin-bottom: 50px;
+  }
+}

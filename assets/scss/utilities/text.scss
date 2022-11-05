@@ -1,0 +1,41 @@
+.text {
+  &_size {
+    &_l {
+      font-size: 21px;
+    }
+
+    &_s {
+      font-size: 12px;
+    }
+  }
+
+  &_coloring {
+    &_info {
+      color: rgba($primary, 0.5);
+    }
+
+    &_primary {
+      color: $primary;
+    }
+  }
+
+  &_weight {
+    &_normal {
+      font-weight: 400;
+    }
+
+    &_bold {
+      font-weight: 650;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .text {
+    &_size {
+      &_l {
+        font-size: 19px;
+      }
+    }
+  }
+}

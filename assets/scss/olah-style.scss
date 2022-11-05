@@ -1,0 +1,206 @@
+
+
+.olah{
+    margin-top: 30px;
+    margin-bottom: 60px;
+    &-wrap{
+        background: #FFFFFF;
+        border-radius: 14px;
+        padding: 40px 40px 30px 40px;
+        &-first{
+            display: flex;
+            gap: 40px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid rgba(#CFD4DC, 0.7);
+            .content{
+                &__left{
+                    width: 330px;
+                }
+                &__right{
+                    width: calc(100% - 330px - 40px);
+                    text-align: justify;
+                    ul {
+                        margin-left: 10px;
+                        li{
+                            list-style: '–';
+                            padding-left: 10px;
+                            margin-bottom: 15px;
+                            &:last-child{
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &-second{
+            padding-top: 40px;
+            .content{
+                &__block{
+                    display: flex;
+                    column-gap: 40px;
+                    padding-bottom: 80px;
+                    position: relative;
+                    &:before{
+                        content: '';
+                        top: 6px;
+                        left: 11px;
+                        position: absolute;
+                        border-left: 1px solid #E85323;
+                        height: 100%;
+                    }
+                    &:last-child{
+                        margin-bottom: 0;
+                        &:before{
+                            content: none;
+                        }
+                    }
+                    &__left{
+                        width: 330px;
+                        display: flex;
+                        .circle{
+                            width: 23px;
+                            height: 23px;
+                            border: 1px solid #E85323;
+                            border-radius: 100%;
+                            margin-right: 27px;
+                            margin-top: 5px;
+                            position: relative;
+                            transition: 0.3s;
+                            flex-shrink: 0;
+                            background-color: #FFFFFF;
+                            &::after{
+                                content: '';
+                                position: absolute;
+                                left: 5px;
+                                top: 5px;
+                                width: 11px;
+                                height: 11px;
+                                background: #FFFFFF;
+                                border-radius: 100%;
+                                transition: 0.3s;
+                            }
+                            &.active{
+                                &::after{
+                                    background: #E85323;
+                                }
+                            }
+                        }
+                        .titles{
+                            width: calc(100% - 50px);
+                            &__title{
+                                margin-bottom: 20px;
+                            }
+                            &__text{
+                                text-align: justify;
+                                margin-bottom: 20px;
+                                display: none;
+                            }
+                            &__button{
+                                display: inline-block;
+                                background-color: #151A25;
+                                border-radius: 10px;
+                                padding: 18px 46px;
+                                color: #FFFFFF;
+                                transition: 0.3s;
+                                cursor: pointer;
+                                &:hover{
+                                    background-color: #E85323;
+                                }
+                            }
+                        }
+                    }
+                    &__right{
+                        text-align: justify;
+                        width: calc(100% - 330px - 40px);
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 991px){
+    .olah{
+        margin-top: 20px;
+        margin-bottom: 60px;
+        &-wrap{
+            &-first{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0px;
+                padding-bottom: 30px;
+                .content{
+                    &__left{
+                        width: 100%;
+                        margin-bottom: 30px;
+                    }
+                    &__right{
+                        width: 100%;
+                    }
+                }
+            }
+            &-second{
+                padding-top: 30px;
+                .content{
+                    &__block{
+                        column-gap: 0px;
+                        padding-bottom: 50px;
+                        flex-wrap: wrap;
+                        &__left{
+                            width: 100%;
+                            display: flex;
+                            .circle{
+                                margin-right: 47px;
+                            }
+                            .titles{
+                                width: calc(100% - 70px);
+                                &__text{
+                                    margin-bottom: 20px;
+                                    display: block;
+                                    max-width: 600px;
+                                }
+                                &__button{
+                                    padding: 16px 46px;
+                                }
+                            }
+                        }
+                        &__right{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px){
+    .olah{
+        margin-top: 20px;
+        margin-bottom: 60px;
+        background: #FFFFFF;
+        &-wrap{
+            background: #FFFFFF;
+            border-radius: 0px;
+            padding: 30px 0px 30px 0px;
+            &-second{
+                .content{
+                    &__block{
+                        &:before{
+                            top: 5px;
+                        }
+                        &__left{
+                            .circle{
+                                margin-right: 15px;
+                                margin-top: 4px;
+                            }
+                            .titles{
+                                width: calc(100% - 38px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

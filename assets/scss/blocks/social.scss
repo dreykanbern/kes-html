@@ -1,0 +1,15 @@
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33px;
+  height: 33px;
+  border-radius: 100%;
+  border: 1px solid $primary;
+
+  &__icon {
+    width: 18px;
+    height: 18px;
+    fill: $primary;
+  }
+}

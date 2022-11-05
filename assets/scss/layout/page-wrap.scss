@@ -1,0 +1,9 @@
+.page-wrap {
+  &:not(.page-wrap__overflow) {
+    overflow-x: hidden;
+  }
+
+  &__footer {
+    margin-top: 70px;
+  }
+}

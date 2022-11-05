@@ -1,0 +1,39 @@
+@media (max-width: 992px) {
+  .swipe {
+    position: relative;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    &__elem {
+      position: absolute;
+      top: 0;
+
+      &_table {
+        position: static;
+        width: 1040px;
+      }
+    }
+
+    &_tabs {
+      padding-top: 80px;
+    }
+
+    &_breadcrumbs {
+      padding-top: 20px;
+    }
+
+    &_filter {
+      padding-top: 80px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .swipe {
+
+  }
+}

@@ -1,0 +1,223 @@
+.article {
+  padding: 42px 150px 40px;
+  border-radius:  14px;
+  background: $white;
+
+  &__svg {
+    &_stroke {
+      stroke: rgba($primary, 0.5);
+    }
+  }
+
+  &_has-banner {
+    border-radius: 0 0 14px 14px;;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    &_mobile {
+      display: none;
+    }
+  }
+
+  &__meta {
+    color: rgba($primary, 0.5);
+    margin-bottom: 30px;
+  }
+
+  &__content {
+    p {
+      line-height: 1.5;
+      margin-top: 20px;
+      &::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      &::-webkit-scrollbar-track {
+        background: $light-grey;
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: $primary;
+        border-radius: 5px;
+      }
+    }
+
+    h2 {
+      margin-top: 40px;
+    }
+
+    img {
+      height: auto;
+      object-fit: cover;
+    }
+
+    .alignleft {
+      float: left;
+      margin-right: 20px;
+    }
+
+    .aligncenter {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .alignright {
+      float: right;
+      margin-left: 20px;
+    }
+
+    img, iframe {
+      display: block;
+      border-radius: 8px;
+    }
+
+    .table-img {
+      height: 570px;
+      max-width: none;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      padding-bottom: 5px;
+      &::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      &::-webkit-scrollbar-track {
+        background: $light-grey;
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: $primary;
+        border-radius: 5px;
+      }
+    }
+
+    table {
+      margin: auto;
+    }
+
+    td {
+      border: 1px solid $lines-grey;
+      padding: 10px;
+    }
+
+    iframe {
+      display: block;
+      width: 100%;
+      margin: 30px 0;
+      &[src^="https://vk.com"] {
+        height: 575px;
+
+        @media (max-width: 1200px) {
+          height: 320px;
+        }
+
+        @media (max-width: 450px) {
+          height: 200px;
+        }
+      }
+    }
+
+    .container-youtube {
+      margin: 30px 0;
+    }
+
+    blockquote {
+      margin: 0;
+      padding-left: 57px;
+      background: url("../img/icon/quotes.svg") left top no-repeat;
+      color: $middle-grey;
+      font-style: italic;
+
+      p:first-child {
+        margin-top: 0;
+      }
+    }
+
+    cite {
+      font-style: normal;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__footer-right {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__line {
+    margin: 30px 0;
+  }
+
+  &__section {
+    margin-top: 50px;
+  }
+
+  &__team-leaders {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 992px) {
+  .article {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+}
+
+@media (max-width: 768px) {
+  .article {
+    padding-left: 30px;
+    padding-right: 30px;
+
+    &__meta {
+      margin-bottom: 32px;
+    }
+
+    &__title {
+      &_mobile {
+        display: block;
+      }
+    }
+
+    &__footer-right {
+      gap: 20px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .article {
+    padding: 40px 0 0;
+    background: none;
+
+    &_has-banner {
+      padding-top: 22px;
+    }
+
+    &__line {
+      margin: 30px 0 20px;
+    }
+
+    &__content {
+      blockquote {
+        padding-left: 0;
+        padding-top: 47px;
+      }
+
+      img {
+        margin: 20px 0;
+      }
+
+      p {
+        line-height: 1.4;
+      }
+    }
+  }
+}

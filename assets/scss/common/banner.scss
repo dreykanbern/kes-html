@@ -1,0 +1,150 @@
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  height: 480px;
+  padding: 0 150px 40px;
+  border-radius: 14px;
+  background-color: $primary;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+  color: $white;
+
+  &__container {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    &_align_bottom {
+      justify-content: flex-end;
+    }
+  }
+
+  &_padding {
+    &_s {
+      padding: 0 30px 50px;
+    }
+  }
+
+  &_bottom-radius_none {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  &_radius {
+    &_s {
+      border-radius: 10px;
+    }
+  }
+
+  &:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    height: 290px;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0.52%, rgba(0, 0, 0, 0.356021) 25%, #000000 100%);
+  }
+
+  &__text, &__meta {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__img {
+    display: none;
+  }
+
+  &__badge {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+  }
+
+  &__meta {
+    color: rgba($white, 0.8);
+    margin-bottom: 3px;
+  }
+
+  &__link {
+    position: absolute;
+    right: 15px;
+    margin-top: -12px;
+    transform: translateY(-100%);
+    z-index: 2;
+  }
+
+  &__img-fade {
+    position: absolute;
+    transform: translateY(-100%);
+    height: 122px;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0.52%, rgba(0, 0, 0, 0.356021) 25%, #000000 100%);
+  }
+}
+
+@media (max-width: 992px) {
+  .banner {
+    padding-left: 75px;
+    padding-right: 75px;
+
+    &:after {
+      height: 350px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    $self: &;
+
+    &__badge {
+      left: 15px;
+    }
+
+    &__region-info {
+      margin-bottom: 35px;
+    }
+
+    &_mobile {
+      &_replace-img {
+        display: block;
+        height: auto;
+        background-size: 0;
+        background-color: transparent;
+        padding: 0;
+
+        &::after {
+          display: none;
+        }
+
+        #{$self} {
+          &__img {
+            display: block;
+            width: 100%;
+            height: 410px;
+            object-fit: cover;
+
+            &_height {
+              &_m {
+                height: 300px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+
+
+
+
+  }
+}

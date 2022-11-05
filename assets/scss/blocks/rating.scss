@@ -1,0 +1,21 @@
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-left: 22px;
+
+    &_gap_low {
+      .rating__icon {
+        margin-right: 5px;
+      }
+    }
+  }
+
+  &__icon {
+    margin-right: 8px;
+  }
+}

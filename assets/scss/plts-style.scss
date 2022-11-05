@@ -1,0 +1,104 @@
+
+
+.plts-text{
+    margin-top: 30px;
+    &-wrap{
+        padding: 40px;
+        background-color: #ffffff;
+        border-radius: 14px;
+    }
+    &__title{
+        margin-bottom: 15px;
+    }
+}
+@media (max-width: 991px){
+    .plts-text{
+        margin-top: 30px;
+        &-wrap{
+            padding: 40px;
+            background-color: #ffffff;
+            border-radius: 14px;
+        }
+        &__title{
+            margin-bottom: 15px;
+        }
+    }
+}
+@media (max-width: 480px){
+    .plts-text{
+        margin-top: 20px;
+        &-wrap{
+            padding: 20px;
+            border-radius: 10px;
+        }
+    }
+}
+
+
+
+.plts-city{
+    margin-top: 30px;
+    &-wrap{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    &__block{
+        position: relative;
+        border-radius: 14px;
+        width: calc((100% - 30px)/ 2);
+        overflow: hidden;
+        &:hover .plts-city__block__link{
+            transform: translateY(0%);
+        }
+        img{
+            display: block;
+            border-radius: 14px;
+            height: 100%;
+        }
+        &__link{
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #151A25;
+            color: #ffffff;
+            text-decoration: none;
+            text-align: center;
+            padding: 20px;
+            border-radius: 0 0 14px 14px;
+            transform: translateY(100%);
+            &:hover{
+                background-color: #E85323;
+            }
+        }
+    }
+}
+@media (max-width: 991px){
+    .plts-city{
+        margin-top: 44px;
+        &-wrap{
+            gap: 20px;
+        }
+        &__block{
+            border-radius: 10px;
+            width: 100%;
+            img{
+                border-radius: 10px 10px 0 0;
+                height: auto;
+            }
+            &__link{
+                position: relative;
+                bottom: auto;
+                left: auto;
+                padding: 16px;
+                border-radius: 0 0 10px 10px;
+                transform: translateY(0%);
+                &:hover{
+                    background-color: #151A25;
+                }
+            }
+        }
+    }
+}

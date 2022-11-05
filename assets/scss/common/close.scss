@@ -1,0 +1,7 @@
+.close {
+  height: 24px;
+  width: 24px;
+  &:after {
+    content: url(../img/icon/cross.svg);
+  }
+}

@@ -1,0 +1,64 @@
+.slider-grid {
+  $self: &;
+
+  &__slide {
+    width: auto;
+  }
+
+  &__arrows {
+    display: flex;
+    margin: 0 -5px;
+  }
+
+  &__real-arrow {
+    display: none;
+  }
+  
+  &__arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    border: 2px solid $white;
+    border-radius: 100%;
+    cursor: pointer;
+
+
+    &:hover, &:focus {
+      background: $white;
+
+      #{$self}__arrow-icon {
+        stroke: $primary;
+      }
+    }
+  }
+
+  &__arrow-icon {
+    stroke: $white;
+    &_right {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__dots {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .slider-grid {
+    &__dots {
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .slider-grid {
+    &__arrows {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.page-content {
+  &__section {
+    margin-top: 30px;
+  }
+
+  &__cards {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-content {
+    &__cards {
+      margin-top: 20px;
+    }
+  }
+}

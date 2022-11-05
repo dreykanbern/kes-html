@@ -1,0 +1,133 @@
+:root {
+  --container-width: none;
+
+  @media (min-width: 576px) {
+    --container-width: 540px;
+  }
+
+  @media (min-width: 768px) {
+    --container-width: 720px;
+  }
+
+  @media (min-width: 992px) {
+    --container-width: 960px;
+  }
+
+  @media (min-width: 1200px) {
+    --container-width: 1140px;
+  }
+
+  @media (min-width: 1400px) {
+    --container-width: 1200px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.4;
+  background: $light-grey;
+  font-size: 17px;
+  font-variation-settings: 'GRAD' 0, 'slnt' 0, 'XTRA' 468, 'XOPQ' 96, 'YOPQ' 79, 'YTLC' 514, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738;
+  font-stretch: 130%;
+  color: $primary;
+}
+
+body, input, textarea, button {
+  font-family: 'Roboto Flex', sans-serif;
+  font-stretch: 130%;
+}
+
+button {
+  cursor: pointer;
+}
+
+input, textarea {
+  line-height: 1.4;
+  font-variation-settings: 'GRAD' 0, 'slnt' 0, 'XTRA' 468, 'XOPQ' 96, 'YOPQ' 79, 'YTLC' 514, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738;
+  font-stretch: 130%;
+  font-size: inherit;
+}
+
+textarea {
+  resize: none;
+}
+
+h1, .h1 {
+  font-size: 36px;
+  font-weight: 650;
+  margin: 0;
+  line-height: 1.3;
+}
+
+h2, .h2 {
+  font-size: 30px;
+  font-weight: 650;
+  line-height: 1.3;
+}
+
+h3, .h3 {
+  font-size: 26px;
+  font-weight: 650;
+  line-height: 1.3;
+}
+
+h4, .h4 {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+button {
+  appearance: none;
+  background: transparent;
+  font-size: inherit;
+  border: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+p {
+  margin: 0;
+}
+
+p + p {
+  margin-top: 20px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+svg.inherited path {
+  fill: inherit;
+  stroke: inherit;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  h1, .h1 {
+    font-size: 30px;
+  }
+
+  h2, .h2 {
+    font-size: 24px;
+  }
+
+  h3, .h3 {
+    font-size: 24px;
+  }
+}

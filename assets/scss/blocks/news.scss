@@ -1,0 +1,55 @@
+.news {
+  &__meta {
+    color: rgba($white, 0.5);
+  }
+}
+
+@media (max-width: 768px) {
+  .news {
+    $self: &;
+
+    &__card {
+      &_mobile {
+        &_compact {
+          height: auto;
+          background-size: 0;
+          padding: 20px 0 5px;
+          border-radius: 0;
+
+          .card__views-icon {
+            stroke: rgba($primary, 0.5);
+          }
+
+          + #{$self}__card {
+            margin-top: 20px;
+            &_mobile_compact {
+              margin-top: 0;
+              border-top: 1px solid $lines-grey;
+            }
+          }
+
+          .card {
+            &__title {
+              color: $primary;
+              margin-bottom: 20px;
+            }
+
+            &__meta {
+              color: rgba($primary, 0.5);
+            }
+
+            &__badge {
+              position: static;
+              margin-bottom: 15px;
+            }
+          }
+
+          &:after {
+            display: none;
+          }
+        }
+
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.line {
+  height: 1px;
+  width: 100%;
+  background: #CFD4DC;
+
+  &_width {
+    &_short {
+      width: 90px;
+    }
+  }
+
+  &_color {
+    &_secondary {
+      background: $secondary;
+    }
+
+    &_white {
+      background: $white;
+    }
+  }
+}

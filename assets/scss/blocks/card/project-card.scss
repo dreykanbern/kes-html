@@ -1,0 +1,54 @@
+.project-card {
+  display: flex;
+  padding-left: 40px;
+  border-radius: 14px;
+  background: $white;
+
+  &__img-container, &__content {
+    width: 50%;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 40px 40px 0;
+  }
+
+  &__img-container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    flex-grow: 1;
+  }
+
+  &__btn {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    display: block;
+    padding-left: 0;
+
+    &__img-container, &__content {
+      width: 100%;
+    }
+
+    &__content {
+      min-height: 327px;
+      padding: 20px 30px 20px;
+    }
+
+    &__btn {
+      margin-top: 23px;
+    }
+  }
+}

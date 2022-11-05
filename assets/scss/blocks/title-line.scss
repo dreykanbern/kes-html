@@ -1,0 +1,14 @@
+.title-line {
+  &, &__sub-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 10px;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+
+
+}

@@ -1,0 +1,55 @@
+.accordion {
+  background: $white;
+  $self: &;
+
+  &__item {
+    padding: 20px 0;
+    border-top: 1px solid rgba($lines-grey, 0.7);
+
+    &:first-child {
+      border-top: 0;
+      padding-top: 0;
+    }
+    &:last-child {
+      padding-bottom: 0;
+    }
+
+    &_active {
+      &#{$self}__item_if-active_bottom-none {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  &__title {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding-right: 40px;
+    text-align: left;
+    font-size: 19px;
+    &:after {
+      content: url("../img/icon/angle-down.svg");
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 9px;
+    }
+
+    &_active {
+      &:after {
+        transform: rotate(180deg) translateY(50%);
+      }
+    }
+  }
+
+  &__content {
+    max-height: 0;
+    padding-top: 0;
+    transition: max-height .3s ease, padding-top .3s ease;
+    overflow: hidden;
+    &_visible {
+      padding-top: 22px;
+    }
+  }
+}

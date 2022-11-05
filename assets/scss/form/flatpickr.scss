@@ -1,0 +1,80 @@
+.date-input {
+  height: 50px;
+  border: 1px solid #CFD4DC;
+  border-radius: 8px;
+  padding: 15px 20px;
+  font-weight: 650;
+}
+
+.flatpickr-months .flatpickr-month {
+  background: $light-grey;
+  height: 44px;
+}
+.flatpickr-current-month {
+  padding-top: 12px;
+  font-size: 15px;
+  color: $primary;
+  font-weight: 650;
+}
+
+.flatpickr-current-month input.cur-year {
+  font-weight: 650;
+}
+
+span.flatpickr-weekday {
+  color: #35425A;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.flatpickr-day.selected, .flatpickr-day.startRange, .flatpickr-day.endRange, .flatpickr-day.selected.inRange, .flatpickr-day.startRange.inRange, .flatpickr-day.endRange.inRange, .flatpickr-day.selected:focus, .flatpickr-day.startRange:focus, .flatpickr-day.endRange:focus, .flatpickr-day.selected:hover, .flatpickr-day.startRange:hover, .flatpickr-day.endRange:hover, .flatpickr-day.selected.prevMonthDay, .flatpickr-day.startRange.prevMonthDay, .flatpickr-day.endRange.prevMonthDay, .flatpickr-day.selected.nextMonthDay, .flatpickr-day.startRange.nextMonthDay, .flatpickr-day.endRange.nextMonthDay {
+  background: $secondary;
+  border-color: $secondary;
+}
+
+.flatpickr-day.inRange, .flatpickr-day.prevMonthDay.inRange, .flatpickr-day.nextMonthDay.inRange, .flatpickr-day.today.inRange, .flatpickr-day.prevMonthDay.today.inRange, .flatpickr-day.nextMonthDay.today.inRange, .flatpickr-day:hover, .flatpickr-day.prevMonthDay:hover, .flatpickr-day.nextMonthDay:hover, .flatpickr-day:focus, .flatpickr-day.prevMonthDay:focus, .flatpickr-day.nextMonthDay:focus {
+  background: rgba($secondary, 0.1);
+  border-color: rgba($secondary, 0.1);
+}
+
+.flatpickr-day.inRange {
+  box-shadow: -5px 0 0 rgba($secondary, 0.1), 5px 0 0 rgba($secondary, 0.1);
+  border: 0;
+  color: $secondary;
+}
+
+.flatpickr-day {
+  border: 0;
+  height: 32px;
+  line-height: 32px;
+}
+
+.flatpickr-weekdays {
+  margin-top: 15px;
+  padding: 0 22px;
+}
+
+.dayContainer {
+  padding: 0 22px 12px;
+  width: 330px;
+  max-width: 330px;
+  min-width: 330px;
+}
+
+.flatpickr-calendar {
+  width: 330px;
+}
+
+.flatpickr-day.selected.startRange, .flatpickr-day.startRange.startRange, .flatpickr-day.endRange.startRange {
+  border-radius: 6px;
+}
+.flatpickr-day.selected.endRange, .flatpickr-day.startRange.endRange, .flatpickr-day.endRange.endRange  {
+  border-radius: 6px;
+}
+
+.flatpickr-day.today:hover, .flatpickr-day.today:focus {
+  background: $secondary;
+  border-color: $secondary;
+}

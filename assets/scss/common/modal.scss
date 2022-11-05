@@ -1,0 +1,70 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+
+  &__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+  &__elem, &__window {
+    position: relative;
+  }
+
+  &__elem {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    &_video {
+      max-height: calc(var(--container-width) * 0.5625 + 40px);
+      height: 100%;
+
+      @media (max-width: 576px) {
+        max-height: 307px;
+      }
+    }
+
+    &_contact {
+      width: 651px;
+      height: auto;
+      border-radius: 8px;
+      background: $white;
+
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+
+    }
+  }
+
+  &__video-container {
+    width: 100%;
+    height: 100%;
+    padding: 20px 0;
+  }
+
+  &__video {
+    width: 100%;
+    height: 100%;
+  }
+
+  &_contact {
+
+  }
+
+  &_show {
+    display: flex;
+  }
+}

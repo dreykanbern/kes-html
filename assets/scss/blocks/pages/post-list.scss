@@ -1,0 +1,27 @@
+.post-list {
+  list-style: none;
+  padding: 0;
+
+  &__item {
+    margin-top: 30px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__title {
+    font-weight: 750;
+    font-size: 17px;
+  }
+
+  &__text {
+    margin-top: 5px;
+  }
+
+  &__date {
+    margin-top: 10px;
+    font-size: 15px;
+    color: rgba($primary, 0.6);
+  }
+}
