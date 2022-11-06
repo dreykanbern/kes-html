@@ -2397,11 +2397,53 @@
     <div class="modal__overlay"></div>
 
     <div class="modal__elem modal__elem_contact contact-modal">
-        <div class="container">
-            <div class="close contact-modal__close modal__close"></div>
+        <form class="form container">
+            <svg class="close contact-modal__close modal__close"
+                 width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 5.90991L6 18.0899" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6 5.90991L18 18.0899" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
 
             <h2 class="h1 contact-modal__title">Форма обратной связи</h2>
-        </div>
+
+            <label class="form__input">
+                <div class="input__label-text">
+                    Имя
+                </div>
+                <input type="text" name="name">
+            </label>
+
+            <label class="form__input">
+                <div class="input__label-text">
+                    E-mail
+                </div>
+                <input type="text" name="email">
+            </label>
+
+            <label class="form__input">
+                <div class="input__label-text">
+                    Телефон
+                </div>
+                <input type="text" name="tel">
+            </label>
+
+            <label class="form__textarea">
+                <div class="input__label-text">
+                    Сообщение
+                </div>
+                <textarea name="message"></textarea>
+            </label>
+
+            <button class="btn form__btn" type="submit">
+                Кнопка
+            </button>
+
+            <span class="form__terms">
+                Нажимая кнопку “Кнопка”, вы соглашаетесь с
+                <a class="terms__link" href="#">условиями обработки персональных данных</a>
+            </span>
+
+        </form>
     </div>
 </div>
 

@@ -1,0 +1,61 @@
+// add form style
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form__input {
+  margin-bottom: 30px;
+}
+
+.form__textarea {
+  margin-bottom: 50px;
+}
+
+.form__btn {
+  width: 33%;
+  align-self: center;
+  margin-bottom: 40px;
+}
+
+.form__terms {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.025em;
+  text-align: left;
+}
+
+.terms__link {
+  &:hover {
+    color: #E85323;
+  }
+}
+
+.input__label-text {
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.025em;
+  text-align: left;
+  color: black;
+  padding-bottom: 8px;
+}
+
+.form__input > input, .form__textarea > textarea {
+  width: 100%;
+  padding: 8px;
+  min-height: 56px;
+  border: 1px solid #CFD4DC;
+  border-radius: 8px;
+  &:focus {
+    border: 1px solid #E85323;
+    color: #E85323;
+  }
+}
+
+.form__textarea > textarea {
+  min-height: 150px;
+}
+

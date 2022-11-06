@@ -1,7 +1,12 @@
 .close {
   height: 24px;
   width: 24px;
-  &:after {
-    content: url(../img/icon/cross.svg);
+  cursor: pointer;
+  stroke: black;
+  &:hover {
+    stroke: #E85323;
+  }
+  &:active {
+    stroke: #E85323;
   }
 }
