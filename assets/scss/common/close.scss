@@ -1,11 +1,7 @@
 .close {
   height: 24px;
   width: 24px;
-  cursor: pointer;
   &:after {
     content: url(../img/icon/cross.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
   }
 }

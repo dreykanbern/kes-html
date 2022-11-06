@@ -8,7 +8,6 @@
   height: 100%;
   top: 0;
   left: 0;
-  overflow-y: hidden;
 
   &__overlay {
     position: absolute;
@@ -26,10 +25,7 @@
   &__elem {
     display: flex;
     align-items: center;
-    max-width: 651px;
-    box-sizing:content-box;
-    overflow-y: auto;
-    
+    height: 100%;
 
     &_video {
       max-height: calc(var(--container-width) * 0.5625 + 40px);
@@ -43,26 +39,16 @@
     &_contact {
       width: 651px;
       height: auto;
-      max-height: 90%;
-      margin-top: 5%;
       border-radius: 8px;
       background: $white;
-       
 
       @media (max-width: 768px) {
-        width: 90%;
+        width: 100%;
       }
-       
 
     }
   }
-  &__container {
-    position: relative;
-    box-sizing: content-box;
-    @media (max-width: 768px) {
-      padding: 0;
-    }
-  }
+
   &__video-container {
     width: 100%;
     height: 100%;
@@ -81,13 +67,4 @@
   &_show {
     display: flex;
   }
-  &__text {
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 20px;
-    & span {
-      color: #E85323;
-    }
-  }
-  
 }

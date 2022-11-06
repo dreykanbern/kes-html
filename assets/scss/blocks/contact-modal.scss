@@ -3,39 +3,13 @@
   padding: 50px;
   font-stretch: initial;
 
-
   &__close {
     position: absolute;
-    right: 0;
-    top: 0;
-    @media (min-width: 600px) and (min-heigth:700px)  {
-      right: -20px;
-       
-    }
-    
-    
-    
+    top: 20px;
+    right: 20px;
   }
 
   &__title {
     margin-bottom: 50px;
-    @media (max-width: 600px) {
-      margin-bottom: 10px;
-    }
-    @media (max-width: 400px) {
-      width: 70%;
-    }
-    @media (max-height: 1200px) {      
-         margin-bottom: 10px;
-       
-    }
-     
-  }
-  @media (max-height: 1200px) {      
-    padding: 10px;
-  
-}
-  @media (max-width: 600px) {
-    padding: 10px;
   }
 }
