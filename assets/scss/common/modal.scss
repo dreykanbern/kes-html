@@ -1,3 +1,5 @@
+@import "assets/scss/variables";
+
 .modal {
   //display: none;
   position: fixed;
@@ -43,7 +45,7 @@
     }
 
     &_contact {
-      width: 651px;
+      max-width: 651px;
       height: auto;
       border-radius: 8px;
       background: $white;
